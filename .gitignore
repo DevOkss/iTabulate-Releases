@@ -1,0 +1,15 @@
+# Ignore the working files of a release build.
+*.blockmap
+builder-debug.yml
+builder-effective-config.yaml
+latest*.yml
+
+# The archives themselves are published as GitHub release assets, which is
+# what the auto-updater reads. Keeping copies in the repository too would only
+# duplicate ~170 MB per version.
+release/
+win-unpacked/
+mac/
+*.exe
+*.dmg
+*.zip
